@@ -1,6 +1,6 @@
 # Ustalenie ścieżki, gdzie znajdą się wszystkie niezbędne pliki
 
-OBJ_API_PATH="$(pwd)/object_detection_api"  
+OBJ_API_PATH="$(pwd)"  
 mkdir $OBJ_API_PATH  
 cd $OBJ_API_PATH
 
@@ -31,6 +31,8 @@ pip install cython
 
  
 # install cocoapi
+cd $OBJ_API_PATH
+pip install numpy
 git clone https://github.com/cocodataset/cocoapi.git  
 cd cocoapi/PythonAPI  
 make  
