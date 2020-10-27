@@ -31,8 +31,8 @@ pip install cython
 
  
 # install cocoapi
-cd $OBJ_API_PATH
-pip install numpy
+cd $OBJ_API_PATH  
+pip install numpy  
 git clone https://github.com/cocodataset/cocoapi.git  
 cd cocoapi/PythonAPI  
 make  
